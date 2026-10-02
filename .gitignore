@@ -3,6 +3,9 @@
 .env.*
 !.env.example
 
+01-foundation/books/
+01-foundation/books_text/
+
 .python-version
 /books/
 /books_text/
