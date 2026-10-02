@@ -1,0 +1,24 @@
+[project]
+name = "ai-engineering-buildcamp-codespaces-homeworks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Anna Anufriyeva", email = "anna.canberra@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "gitsource>=0.0.5",
+    "jupyter>=1.1.1",
+    "markitdown[pdf]>=0.1.8",
+    "minsearch>=0.2.0",
+    "openai>=3.23.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+ai-engineering-buildcamp-codespaces-homeworks = "ai_engineering_buildcamp_codespaces_homeworks:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
