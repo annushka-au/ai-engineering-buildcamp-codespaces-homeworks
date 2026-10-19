@@ -228,3 +228,31 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# ==========================================================
+# MODULE 04 - TESTING AND EVALUATION
+# ==========================================================
+
+# DuckDB databases and temporary files.
+# These are generated locally and should not be committed.
+*.db
+*.db.wal
+*.duckdb
+*.duckdb.wal
+
+# Downloaded datasets.
+# The taxi dataset can be downloaded again by setup_database().
+*.parquet
+
+# Temporary API usage and cost tracking results.
+# Keep Python source files such as patch_agent.py.
+.cost_tracking/
+cost_tracking.jsonl
+costs.jsonl
+
+# Python virtual environments.
+.venv/
+
+# macOS metadata.
+.DS_Store

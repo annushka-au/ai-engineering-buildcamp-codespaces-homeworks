@@ -1,0 +1,46 @@
+[project]
+name = "04-testing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Anna Anufriyeva", email = "anna.canberra@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "duckdb>=1.5.6",
+    "pydantic-ai>=2.57.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+04-testing = "04_testing:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]
+
+# --------------------------------------------------
+# PYTEST CONFIGURATION
+# --------------------------------------------------
+
+[tool.pytest.ini_options]
+
+# Allow tests to import modules from the project root.
+pythonpath = ["."]
+
+# Look for tests inside the tests folder.
+testpaths = ["tests"]
+
+# Display detailed test results.
+addopts = "-v"
+
+# Reuse one event loop for all asynchronous tests
+# in the pytest session.
+asyncio_default_test_loop_scope = "session"
