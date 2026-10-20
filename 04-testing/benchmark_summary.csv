@@ -1,0 +1,14 @@
+method,metric,value
+direct_sql,repetitions,30
+direct_sql,median,0.0016537290066480637
+direct_sql,p95,0.0028061436605639756
+direct_sql,min,0.0012407919857650995
+direct_sql,max,0.003364250063896179
+ai_agent,repetitions,30
+ai_agent,median,4.646865562535822
+ai_agent,p95,6.663990799803287
+ai_agent,min,3.8804992919322103
+ai_agent,max,6.842513874871656
+ai_agent,accuracy_pct,100.0
+ai_agent,total_cost_usd,0.0109932
+ai_agent,cost_per_call_usd,0.00036644
