@@ -1,4 +1,27 @@
 
+"""
+TRIVIA TOOLS
+------------
+Fetches trivia categories and multiple-choice questions from
+the Open Trivia Database (https://opentdb.com/).
+
+Dependencies: requests
+Install: uv add requests
+
+Functions:
+- get_categories(): Returns available categories and their IDs.
+- get_questions(amount, category, difficulty):
+  Fetches questions with correct and incorrect answers.
+
+Parameters:
+- amount: Number of questions (1-10).
+- category: Category ID from get_categories().
+- difficulty: easy, medium, or hard.
+
+Uses requests to fetch JSON data and html.unescape()
+to convert HTML entities into readable text.
+"""
+
 import html
 import requests
 
