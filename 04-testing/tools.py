@@ -14,7 +14,7 @@ import duckdb
 # If it does not exist, DuckDB creates an empty database.
 #
 # 'con' is a connection object used to execute SQL queries.
-con = duckdb.connect("taxi.db")
+con = duckdb.connect("data/taxi.db")
 
 
 # ---------------------------------------------------------

@@ -16,10 +16,3 @@ dependencies = [
     "pydantic-ai>=2.54.0",
     "python-dotenv>=1.2.4",
 ]
-
-[project.scripts]
-ai-engineering-buildcamp-codespaces-homeworks = "ai_engineering_buildcamp_codespaces_homeworks:main"
-
-[build-system]
-requires = ["uv_build>=0.12.17,<0.13.0"]
-build-backend = "uv_build"

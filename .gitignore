@@ -3,12 +3,12 @@
 .env.*
 !.env.example
 
-01-foundation/books/
-01-foundation/books_text/
+01-foundation/rag/books/
+01-foundation/rag/books_text/
+01-foundation/data/
+04-testing/data/
 
 .python-version
-/books/
-/books_text/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

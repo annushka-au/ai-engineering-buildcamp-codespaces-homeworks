@@ -16,7 +16,7 @@ import duckdb
 # If it does not exist, DuckDB creates an empty database.
 #
 # 'con' is a connection object used to execute SQL queries.
-con = duckdb.connect("taxi.db")
+con = duckdb.connect("data/taxi.db")
 
 
 # ---------------------------------------------------------
@@ -30,7 +30,7 @@ DATA_URL = (
 )
 
 # Local filename for the downloaded dataset.
-PARQUET_FILE = "yellow_tripdata_2024-01.parquet"
+PARQUET_FILE = "data/yellow_tripdata_2024-01.parquet"
 
 
 def setup_database():
